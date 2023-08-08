@@ -4,7 +4,7 @@
 #include <iostream>
 int main()
 {
-  //hello
+  //hello abvs
   crow::SimpleApp app;
   CROW_ROUTE(app, "/calculator/greeting")
       .methods("GET"_method)(&greet);
@@ -14,5 +14,6 @@ int main()
       .methods("POST"_method)(&subtract);
 
   app.port(8080).run();
+  cout<<"hello";
   return 0;
 }
